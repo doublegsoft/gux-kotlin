@@ -9,7 +9,7 @@ android {
   defaultConfig {
     applicationId "ui.doublegsoft.gux"
     minSdkVersion 24
-    targetSdkVersion 24
+    targetSdkVersion 35
     versionCode 1
     versionName "1.0"
 
@@ -23,6 +23,14 @@ android {
     }
   }
 
+  sourceSets {
+    main {
+      res.srcDirs = [
+         "src/main/res",
+         "src/main/res/layout/common",
+      ]
+    }
+  }
 }
 
 dependencies {
