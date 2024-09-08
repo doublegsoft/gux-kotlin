@@ -14,8 +14,12 @@
 
   <Button
       android:id="@+id/buttonStart"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="200dp"
+      android:layout_height="64dp"
+      android:textColor="#FFFFFF"
+      android:textSize="22sp"
+      android:padding="10dp"
+      android:elevation="4dp"
       android:text="开始使用"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"

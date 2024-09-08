@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
   <ImageView
-      android:id="@+id/successImageView"
+      android:id="@+id/failureImageView"
       android:layout_width="300dp"
       android:layout_height="300dp"
       app:layout_constraintBottom_toTopOf="@id/buttonBackToHome"
@@ -15,12 +15,16 @@
 
   <Button
       android:id="@+id/buttonBackToHome"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="200dp"
+      android:layout_height="64dp"
+      android:textColor="#FFFFFF"
+      android:textSize="22sp"
+      android:padding="10dp"
+      android:elevation="4dp"
       android:text="回到首页"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/successImageView" />
+      app:layout_constraintTop_toBottomOf="@id/failureImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

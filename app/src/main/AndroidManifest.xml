@@ -20,7 +20,8 @@
       </intent-filter>
     </activity>
     <activity android:name=".MainActivity" />
-    <activity android:name=".common.SuccessActivity" />
+    <activity android:name="ui.doublegsoft.gux.page.common.SuccessActivity" />
+    <activity android:name="ui.doublegsoft.gux.page.common.FailureActivity" />
   </application>
 
 </manifest>
