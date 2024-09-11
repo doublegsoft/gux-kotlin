@@ -1,0 +1,22 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+  <fragment
+      android:id="@+id/homeFragment"
+      android:name="ui.doublegsoft.gux.page.navigable.HomeFragment"
+      android:label="首页">
+  </fragment>
+
+  <fragment
+      android:id="@+id/indexFragment"
+      android:name="ui.doublegsoft.gux.page.navigable.IndexFragment"
+      android:label="页面">
+  </fragment>
+
+  <fragment
+      android:id="@+id/userFragment"
+      android:name="ui.doublegsoft.gux.page.navigable.UserFragment"
+      android:label="用户"/>
+</navigation>

@@ -20,7 +20,6 @@ class TwoColumnForm @JvmOverloads constructor(
 
   init {
     orientation = VERTICAL
-
     setPadding(16, 16, 16, 16)
   }
 

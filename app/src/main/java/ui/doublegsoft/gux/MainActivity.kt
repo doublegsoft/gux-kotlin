@@ -1,36 +1,23 @@
 package ui.doublegsoft.gux
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import ui.doublegsoft.gux.page.common.FailureActivity
-import ui.doublegsoft.gux.page.common.SuccessActivity
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-
-  private lateinit var listView: ListView
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
 
-    val buttonGotoSuccess: LinearLayout = findViewById(R.id.buttonGotoSuccess)
+    val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+    val navController = navHostFragment.navController
 
-    // Set an OnClickListener to handle clicks
-    buttonGotoSuccess.setOnClickListener {
-      val intent = Intent(this, SuccessActivity::class.java)
-      startActivity(intent)
-    }
-
-    val buttonGotoFailure: LinearLayout = findViewById(R.id.buttonGotoFailure)
-
-    // Set an OnClickListener to handle clicks
-    buttonGotoFailure.setOnClickListener {
-      val intent = Intent(this, FailureActivity::class.java)
-      startActivity(intent)
-    }
+    findViewById<BottomNavigationView>(R.id.bottom_navigation)
+      .setupWithNavController(navController)
   }
 
   override fun onBackPressed() {
