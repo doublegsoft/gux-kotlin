@@ -37,16 +37,15 @@ class HomeFragment : Fragment() {
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View? {
-    Log.d("", "home")
     val root = inflater.inflate(R.layout.fragment_home, container, false)
     val swiperNavigator = root.findViewById<SwiperNavigator>(R.id.swiperNavigator)
+    swiperNavigator.setImages(listOf(
+      "https://picsum.photos/500/300",
+      "https://picsum.photos/500/300",
+      "https://picsum.photos/500/300",
+      "https://picsum.photos/500/300"
+    ))
 
-
-//    // 设置初始位置
-//    viewPager.setCurrentItem(adapter.itemCount / 2, false)
-//
-//    // 设置 PageTransformer
-//    viewPager.setPageTransformer(LoopingPageTransformer(3))
     return root
   }
 
